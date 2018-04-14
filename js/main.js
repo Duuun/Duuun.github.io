@@ -1,6 +1,6 @@
 $(function() {
   'use strict';
-  $('a[href =#]').click(function(){
+  $('a[href^=#]').click(function(){
     var speed = 400;
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
@@ -9,4 +9,4 @@ $(function() {
     return false;
   });
 
-})();
+});

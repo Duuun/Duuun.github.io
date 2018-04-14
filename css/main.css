@@ -105,3 +105,12 @@ ul.menu li.menu-contact a {
 .description .introduce {
   font-size: 40px;
 }
+ul.social-icons {
+  list-style: none;
+  display: table;
+  margin: 0 auto;
+}
+ul.social-icons li {
+  display: table-cell;
+  padding: 0 16px;
+}
