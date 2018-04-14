@@ -104,6 +104,9 @@ ul.menu li.menu-contact a {
 }
 .description .introduce {
   font-size: 35px;
+  border-bottom: 1px dotted black;
+  margin-top: 20px;
+  margin-bottom: 12px;
 }
 ul.social-icons {
   list-style: none;
@@ -135,8 +138,6 @@ ul.social-icons li {
 /* footer */
 .page-footer {
   opacity: 0.8;
-  /* background-color: lightslategray !important; */
-  /* background: linear-gradient(-135deg, #ffe567, #94d0bf) !important; */
   background: linear-gradient(-135deg, gray, black) !important;
   font-size: 14px;
   padding: 8px 17px !important;
