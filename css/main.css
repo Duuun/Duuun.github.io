@@ -14,11 +14,13 @@
 }
 .header-container h1 {
   color: #fff;
+  opacity: 0.8;
   font-size: 60px;
   text-align: center;
 }
-.header-container p {
+.header-container div {
   color: #fff;
+  opacity: 0.8;
   text-align: center;
   font-size: 30px;
   margin-top: 30px;
@@ -28,6 +30,15 @@
   width: 50px;
   margin: 60px auto;
   background-color: #fff;
+  opacity: 0.8;
+}
+.container-separator-black {
+  height: 1px;
+  text-align: center;
+  width: 30px;
+  margin: 20px auto;
+  background-color: black;
+  opacity: 0.8;
 }
 ul.menu {
   display: table;
@@ -39,9 +50,27 @@ ul.menu li {
   padding: 0 8px;
 }
 ul.menu li a {
-  color: #fff;
   font-size: 30px;
   padding: 16px 32px;  
+}
+ul.menu li:hover {
+  -moz-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+ul.menu li.menu-home a {
+  color: #f2a7b7;
+}
+ul.menu li.menu-profile a {
+  color: #e9e15d;
+}
+ul.menu li.menu-works a {
+  color: #81a0d3;
+}
+ul.menu li.menu-contact a {
+  color: #f7c6bd;
 }
 .material-icons {
   font-size: 30px !important;
@@ -56,10 +85,10 @@ ul.menu li a {
 }
 .category .category-title {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
 }
 .category-title > .material-icons {
-  font-size: 50px !important;
+  font-size: 40px !important;
 }
 .profile-item {
   width: 72%;

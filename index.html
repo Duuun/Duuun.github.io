@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>  
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script type="text/javascript" src="js/main.js"></script>
@@ -19,41 +19,75 @@
       <div class="top-header">
           <div class="header-container">
               <h1>Daisuke Murakami</h1>
-              <p>I will born</p>
+              <div>
+                  I would like to be in bedding forever if I can :D
+              </div>
               <div class="container-separator-white"></div>
               <ul class="menu">
-                  <li><a href="#home"><i class="material-icons">home</i>Home</a></li>
-                  <li><a href="#profile"><i class="material-icons">person</i>Profile</a></li>
-                  <li><a href="#works"><i class="material-icons">favorite</i>Works</a></li>
-                  <li><a href="#contact"><i class="material-icons">mail</i>Contact</a></li>
+                  <li class="menu-home"><a href="#home"><i class="material-icons">home</i><span>Home</span></a></li>
+                  <li class="menu-profile"><a href="#profile"><i class="material-icons">person</i>Profile</a></li>
+                  <li class="menu-works"><a href="#works"><i class="material-icons">favorite</i>Works</a></li>
+                  <li class="menu-contact"><a href="#contact"><i class="material-icons">mail</i>Contact</a></li>
               </ul>
           </div>
       </div>
   </header>
   <main>
-    <div id="profile" class="section category profile">
+    <div id="profile" class="section category profile">      
       <h1 class="category-title"><i class="material-icons">person</i>Profile</h1>
+      <div class="container-separator-black"></div>
       <div class="profile-icon float-left">
         <img src="img/profile-icon.jpg" width="230px" alt="profile-icon">
       </div>
-      <div class="profile-item float-left">
+      <div class="profile-item float-left">        
         <div class="description">
           <h1 class="introduce">自己紹介</h1>
-          <p>はじめまして。村上大介と申します。</p>
+          <div>はじめまして。村上大介と申します。</div>
         </div>
         <div class="description"></div>
       </div>
     </div>
     <div id="works" class="section category works">
-      <h1>works</h1>
+      <h1 class="category-title"><i class="material-icons">favorite</i>Works</h1>      
     </div>
     <div id="contact" class="section category contact">
-      <h1>contact</h1>
+      <h1 class="category-title"><i class="material-icons">mail</i>Contact</h1>            
+      <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                <label for="disabled">Disabled</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+          </form>
+        </div>
       <button class="btn waves-effect waves-light" type="submit" name="action">Thanks
           <i class="material-icons right">send</i>
-        </button>
+      </button>
     </div>
   </main>  
-  <a id="profile"></a>
 </body>
 </html>
