@@ -11,6 +11,7 @@
   background-position: center;
   box-sizing: border-box;
   padding: 190px 0;
+  width: 100%;
 }
 .header-container h1 {
   color: #fff;
@@ -93,7 +94,6 @@ ul.menu li.menu-contact a {
 .profile-item {
   width: 72%;
   padding: 0 8px;
-  line-height: 180px;
 }
 .float-left {
   float: left;
@@ -103,7 +103,7 @@ ul.menu li.menu-contact a {
   margin-bottom: 35px;
 }
 .description .introduce {
-  font-size: 40px;
+  font-size: 35px;
 }
 ul.social-icons {
   list-style: none;
@@ -113,4 +113,32 @@ ul.social-icons {
 ul.social-icons li {
   display: table-cell;
   padding: 0 16px;
+}
+.description-msg {
+  width: 600px;
+  height: 150px;
+}
+.description .description-msg p {
+  font-size: 16px;
+  line-height:30px;
+}
+.description-msg ul li img {
+  width: 138px;
+  height: 65px;
+}
+.tech-icons li {
+  padding-right: 24px;
+  padding-bottom: 16px;
+  float: left;
+  box-sizing: border-box;
+}
+/* footer */
+.page-footer {
+  opacity: 0.8;
+  /* background-color: lightslategray !important; */
+  /* background: linear-gradient(-135deg, #ffe567, #94d0bf) !important; */
+  background: linear-gradient(-135deg, gray, black) !important;
+  font-size: 14px;
+  padding: 8px 17px !important;
+  width: 100%;
 }
