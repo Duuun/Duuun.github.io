@@ -37,7 +37,7 @@
   height: 1px;
   text-align: center;
   width: 30px;
-  margin: 20px auto;
+  margin: 15px auto;
   background-color: black;
   opacity: 0.8;
 }
@@ -103,10 +103,13 @@ ul.menu li.menu-contact a {
   margin-bottom: 35px;
 }
 .description .introduce {
-  font-size: 35px;
+  font-size: 30px;
   border-bottom: 1px dotted black;
   margin-top: 20px;
   margin-bottom: 12px;
+}
+.right15_ {
+  margin-right: 15px;
 }
 ul.social-icons {
   list-style: none;
