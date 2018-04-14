@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', 'mplus-1p-regular', sans-serif;
+}
+.top-header {
+  background-image: url(../img/top-header.jpg);
+  background-size:cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 190px 0;
+}
+.header-container h1 {
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+}
+.header-container p {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.container-separator-white {
+  height: 1px;
+  width: 50px;
+  margin: 60px auto;
+  background-color: #fff;
+}
+ul.menu {
+  display: table;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+ul.menu li {
+  display: table-cell;
+  padding: 0 8px;
+}
+ul.menu li a {
+  color: #fff;
+  font-size: 30px;
+  padding: 16px 32px;  
+}
+.material-icons {
+  font-size: 30px !important;
+  margin-right: 12px;
+}
+.section {
+  margin-top: 40px;
+}
+.category {
+  width: 880px;
+  margin: 0 auto;
+}
+.category .category-title {
+  text-align: center;
+  font-size: 50px;
+}
+.category-title > .material-icons {
+  font-size: 50px !important;
+}
+.profile-item {
+  width: 72%;
+  padding: 0 8px;
+  line-height: 180px;
+}
+.float-left {
+  float: left;
+  box-sizing: border-box;
+}
+.description {
+  margin-bottom: 35px;
+}
+.description .introduce {
+  font-size: 40px;
+}

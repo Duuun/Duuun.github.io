@@ -6,14 +6,54 @@
   <title>Duuun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
   <header>
-    <h3>This is a header</h3>
+      <div class="top-header">
+          <div class="header-container">
+              <h1>Daisuke Murakami</h1>
+              <p>I will born</p>
+              <div class="container-separator-white"></div>
+              <ul class="menu">
+                  <li><a href="#home"><i class="material-icons">home</i>Home</a></li>
+                  <li><a href="#profile"><i class="material-icons">person</i>Profile</a></li>
+                  <li><a href="#works"><i class="material-icons">favorite</i>Works</a></li>
+                  <li><a href="#contact"><i class="material-icons">mail</i>Contact</a></li>
+              </ul>
+          </div>
+      </div>
   </header>
   <main>
-    <h1>test</h1>
+    <div id="profile" class="section category profile">
+      <h1 class="category-title"><i class="material-icons">person</i>Profile</h1>
+      <div class="profile-icon float-left">
+        <img src="img/profile-icon.jpg" width="230px" alt="profile-icon">
+      </div>
+      <div class="profile-item float-left">
+        <div class="description">
+          <h1 class="introduce">自己紹介</h1>
+          <p>はじめまして。村上大介と申します。</p>
+        </div>
+        <div class="description"></div>
+      </div>
+    </div>
+    <div id="works" class="section category works">
+      <h1>works</h1>
+    </div>
+    <div id="contact" class="section category contact">
+      <h1>contact</h1>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Thanks
+          <i class="material-icons right">send</i>
+        </button>
+    </div>
   </main>  
+  <a id="profile"></a>
 </body>
 </html>
