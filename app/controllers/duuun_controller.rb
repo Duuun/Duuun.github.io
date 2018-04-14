@@ -1,0 +1,2 @@
+class DuuunController < ApplicationController
+end
