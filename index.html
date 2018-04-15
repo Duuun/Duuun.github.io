@@ -14,8 +14,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>  
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
+<style type="text/css">
+
+</style>
   <header>
       <div class="top-header">
           <div class="header-container">
@@ -24,7 +28,7 @@
               </div>
               <div class="container-separator-white"></div>
               <ul class="menu">
-                  <li class="menu-home"><a href="#home"><i class="material-icons">home</i><span>Home</span></a></li>
+                  <li class="menu-home"><a href="#"><i class="material-icons">home</i><span>Home</span></a></li>
                   <li class="menu-profile"><a href="#profile"><i class="material-icons">person</i>Profile</a></li>
                   <li class="menu-works"><a href="#works"><i class="material-icons">favorite</i>Works</a></li>
                   <li class="menu-contact"><a href="#contact"><i class="material-icons">mail</i>Contact</a></li>
@@ -33,40 +37,61 @@
       </div>
   </header>
   <main>
-    <div id="profile" class="section category profile">      
-      <h1 class="category-title"><i class="material-icons">person</i>Profile</h1>
-      <div class="container-separator-black"></div>
-    <div>
-        <div class="profile-icon float-left right15_">
-          <img src="img/profile-icon.jpg" width="230px" alt="profile-icon">
-        </div>
-        <div class="profile-item float-left">        
-          <div class="description">
-            <div class="introduce">Introduction</div>
-            <div class="description-msg">
-              <p>はじめまして。村上 大介と申します。東京でC#を扱うサーバーサイドエンジニアをしています。</p>
-              <p>プログラミング歴は1年程で、今はRuby on Railsで実際のWebページを作りつつ言語の学習に励んでおります。</p>
-              <p>好きな食べ物はカレーとカルボナーラです。</p>
-            </div>
-            <div class="introduce">Software</div>
-            <div class="description-msg">
-              <ul class="tech-icons">
-                <li>
-                  <img src="img/rails_logo.png" alt="rails_logo">                  
-                </li>
-                <li>
-                  <img src="img/sqlserver_logo.png" alt="ssms_logo">                  
-                </li>
-                <li>
-                  <img src="img/heroku.png" alt="heroku_logo">                  
-                </li>
-                <li>
-                  <img src="img/git.png" height="51" alt="git_logo">   
-                </li>
-              </ul>
+        <div id="profile" class="section category profile">
+          <h1 class="category-title"><i class="material-icons">person</i>Profile</h1>
+          <div class="container-separator-black"></div>
+        <div class="row">
+          <div class="col s4">
+            <div class="profile-icon float-left right15_">
+              <img src="img/profile-icon.jpg" width="270px" alt="profile-icon">
             </div>
           </div>
-          <div class="description"></div>
+          <div class="col s8 border-box" style="margin-top:33px;">
+            <div class="profile-item float-left">        
+              <div class="description">
+                <div class="introduce">Introduction</div>
+                <div class="description-msg msg-pad">
+                  <p>はじめまして。村上 大介と申します。東京でC#を扱うサーバーサイドエンジニアをしています。</p>
+                  <p>プログラミング歴は1年程で、今はRuby on Railsで実際のWebページを作りつつ言語の学習に励んでおります。</p>
+                  <p>好きな食べ物はカレーとカルボナーラです。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4">
+            <div class="border-box">
+              <a class="twitter-timeline"
+                  width="320px"
+                  height="500px"
+                  href="https://twitter.com/muramura232?ref_src=twsrc%5Etfw">Tweets by muramura232
+              </a> 
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+          <div class="col s8">
+            <div class="introduce-tech border-box">
+              <div class="introduce" style="padding-left:17px;">Software</div>
+              <div class="description-msg tech">
+                <ul class="tech-icons">
+                  <li>
+                    <img src="img/rails_logo.png" alt="rails_logo">                  
+                  </li>
+                  <li>
+                    <img src="img/sqlserver_logo.png" alt="ssms_logo">                  
+                  </li>
+                  <li>
+                    <img src="img/heroku.png" alt="heroku_logo">                  
+                  </li>
+                  <li>
+                    <img src="img/git.png" height="51" alt="git_logo">   
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="description"></div>
+          </div>
         </div>
       </div>
     </div>

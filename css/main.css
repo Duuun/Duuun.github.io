@@ -81,7 +81,7 @@ ul.menu li.menu-contact a {
   margin-top: 40px;
 }
 .category {
-  width: 880px;
+  width: 950px;
   margin: 0 auto;
 }
 .category .category-title {
@@ -102,9 +102,8 @@ ul.menu li.menu-contact a {
 .description {
   margin-bottom: 35px;
 }
-.description .introduce {
+.description .introduce,.col .introduce {
   font-size: 30px;
-  border-bottom: 1px dotted black;
   margin-top: 20px;
   margin-bottom: 12px;
 }
@@ -137,6 +136,20 @@ ul.social-icons li {
   padding-bottom: 16px;
   float: left;
   box-sizing: border-box;
+}
+.border-box {
+  border: 2px solid lightgray;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+.introduce-tech {
+  height: 511px;
+}
+.tech {
+ padding: 2px 39px; 
+}
+.msg-pad {
+  padding: 0 10px;
 }
 /* footer */
 .page-footer {
