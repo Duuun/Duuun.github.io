@@ -1,16 +1,16 @@
 window.onload = function(){
   var array = [
     "I would like to be in bedding forever if I can :D",
-    "I wish I could get the money without working.",
+    "I wish I could get the money without working :D",
     "I would like to have a weekly holiday 8 :)",
-    "I feel longing for the life that only eats and sleeps...",
+    "I feel longing for the life that only eats and sleeps... :)",
     "Start seriously next year :D",
     "The goal of this year is not catching a cold.",
-    "Let's do tomorrow what I can do tomorrow.",
+    "Let's do tomorrow what I can do tomorrow :D",
     "I hope for a world where everyone can live happily :)",
     "I just want to be a human being who is just playing games.",
-    "This is fine.",
-    "I am going to go to sleep today wishing that I get rich when I get up.",
+    "This is fine :D",
+    "I am going to go to sleep today wishing that I get rich when I get up :D",
     "By the time I come to work I have someone who wants to go home already :)"
   ];
   var msg = array[Math.floor(Math.random() * array.length)];
@@ -27,4 +27,21 @@ $(function() {
     $("html, body").animate({scrollTop:position}, speed, "swing");
     return false;
   });
+});
+
+/* bxslider */
+$(document).ready(function(){
+  $('bxslider').bxSlider({
+    mode: 'vartical'
+  });
+});
+
+/* materialize */
+var elem = document.querySelector('.sidenav');
+var instance = M.Sidenav.init(elem, options);
+
+// Or with jQuery
+
+$(document).ready(function(){
+  $('.sidenav').sidenav();
 });

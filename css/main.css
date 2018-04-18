@@ -151,6 +151,16 @@ ul.social-icons li {
 .msg-pad {
   padding: 0 10px;
 }
+
+/* works */
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+.swiper-slide img {
+  width: 150px;
+}
+
 /* footer */
 .page-footer {
   opacity: 0.8;
