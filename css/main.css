@@ -5,10 +5,19 @@
   padding: 0;
   font-family: 'Raleway', 'mplus-1p-regular', sans-serif;
 }
+body {
+  font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold !important;
+}
 .parallax-container {
   -moz-box-shadow: 0 5px 8px rgba(0,0,0,0.4);
   -webkit-box-shadow: 0 5px 8px rgba(0,0,0,0.4);
   box-shadow: 0 5px 8px rgba(0,0,0,0.4);
+}
+.parallax-container .parallax {
+  z-index: 0 !important;
 }
 .back-img {
   background-image: url(../img/top-header.jpg);
@@ -67,7 +76,7 @@ ul.menu li a {
   font-size: 30px;
   padding: 16px 32px;  
 }
-ul.menu li:hover {
+ul.menu li:hover {  
   -moz-transform: rotate(10deg);
   -webkit-transform: rotate(10deg);
   -o-transform: rotate(10deg);
