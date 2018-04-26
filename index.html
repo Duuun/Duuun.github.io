@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Duuun</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.bxslider.css" />
@@ -19,84 +19,156 @@
 
 </head>
 <body>
-  <div class="parallax-container">
-    <div class="parallax" style="background: #7c5341;">
-      <div style="font-weight: bold;text-align: center; font-size: 56px; margin-top: 100px; color: #bd8a55;">
-        <span>Daisuke Murakami</span>
-        <div class="top-msg" style="font-size: 30px; margin-top: 30px;"></div>
-      </div>
-      <div class="container-separator-white"></div>
-      <ul class="menu">
-        <li class="menu-home"><a href="#"><i class="material-icons">home</i><span>Home</span></a></li>
-        <li class="menu-profile"><a href="#profile"><i class="material-icons">person</i>Profile</a></li>
-        <li class="menu-works"><a href="#works"><i class="material-icons">favorite</i>Works</a></li>
-        <li class="menu-contact"><a href="#contact"><i class="material-icons">mail</i>Contact</a></li>
-      </ul>
-    </div>
-  </div>
-  <div id="profile" class="section category profile">
-    <h1 class="category-title"><i class="material-icons">person</i>Profile</h1>
-    <div class="container-separator-black"></div>
-  <div class="row">
-    <div class="col s4">
-      <div class="profile-icon float-left right15_">
-        <img src="img/profile-icon.jpg" width="270px" alt="profile-icon" style="margin-top:-10px;">
-      </div>
-    </div>
-    <div class="col s8" style="margin-top:15px;">
-      <div class="profile-item float-left">        
-        <div class="description">
-          <div class="introduce">Introduction</div>
-          <div class="description-msg msg-pad">
-            <p>はじめまして。村上 大介と申します。東京でC#を扱うサーバーサイドエンジニアをしています。</p>
-            <p>プログラミング歴は1年程で、今はRuby on Railsで実際のWebページを作りつつ言語の学習に励んでおります。</p>
-            <p>好きな食べ物はカレーとカルボナーラです。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4">
-      <div class="">
-        <a class="twitter-timeline"
-            width="320px"
-            height="500px"
-            href="https://twitter.com/muramura232?ref_src=twsrc%5Etfw">Tweets by muramura232
-        </a> 
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="introduce-tech">
-        <div class="introduce" style="padding-left:17px;">Software</div>
-        <div class="description-msg tech">
-          <ul class="tech-icons">
-            <li>
-              <img src="img/rails_logo.png" alt="rails_logo">                  
-            </li>
-            <li>
-              <img src="img/sqlserver_logo.png" alt="ssms_logo">                  
-            </li>
-            <li>
-              <img src="img/heroku.png" alt="heroku_logo">                  
-            </li>
-            <li>
-              <img src="img/git.png" height="51" alt="git_logo">   
-            </li>
+<style type="text/css">
+.parallax img {
+  bottom: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-position: center;
+}
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+.parallax {
+  background-image: url("img/top-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.top-msg {
+  font-size: 1.8em;
+}
+.block {
+  padding: 10px;
+}
+.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 4%;
+}
+.p-padding {
+  padding: 5%;
+}
+.block {
+  padding: 0 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+</style>
+<header>
+  <div id="index-banner" class="parallax-container info">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <h1 class="header center white-text text-darken-1">Daisuke Murakami</h1>
+        <div class="header center white-text text-darken-1 top-msg"></div>
+        <div class="row center menu-icons">
+          <ul class="menu">
+            <li class="menu-home"><a href="#"><i class="material-icons">home</i><span>Home</span></a></li>
+            <li class="menu-profile"><a href="#profile"><i class="material-icons">person</i>Profile</a></li>
+            <li class="menu-works"><a href="#works"><i class="material-icons">favorite</i>Works</a></li>
+            <li class="menu-contact"><a href="#contact"><i class="material-icons">mail</i>Contact</a></li>
           </ul>
         </div>
       </div>
-      <div class="description"></div>
+    </div>
+    <div class="parallax top">
+      <img src="img/top-header.jpg" alt="top" style="bottom: 0px; display: block;">
+    </div>
+  </div>
+</header>
+<div class="container m-padding">
+  <div class="section">
+    <div class="row">
+      <h3 class="center border-bottom">
+        <i class="Medium material-icons">person</i>Profile
+      </h3>
+      <div class="col s12 m4">
+        <div class="block z-depth-1">
+          <div class="center">
+            <img src="img/profile-icon.jpg" alt="profile" width="100px">
+          </div>
+          <h6 class="center">Introduction</h6>
+          <p class="divider"></p>
+          <p class="p-padding">
+            はじめまして。村上 大介と申します。東京でC#を扱うサーバーサイドエンジニアをしています。<br>
+            プログラミング歴は1年程で、今はRuby on Railsで実際のWebページを作りつつ言語の学習に励んでおります。<br>
+            好きな食べ物は焼肉とカレーとカルボナーラです。
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="block z-depth-1">
+          <div class="center">
+            <img src="img/profile-icon.jpg" alt="profile" width="100px">
+          </div>
+          <h6 class="center">Software</h6>
+          <p class="divider"></p>
+          <p class="p-padding">
+            はじめまして。村上 大介と申します。東京でC#を扱うサーバーサイドエンジニアをしています。<br>
+            プログラミング歴は1年程で、今はRuby on Railsで実際のWebページを作りつつ言語の学習に励んでおります。<br>
+            好きな食べ物は焼肉とカレーとカルボナーラです。
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="block z-depth-1">
+          <div class="center">
+            <img src="img/profile-icon.jpg" alt="profile" width="100px">
+          </div>
+          <h6 class="center">Hobby</h6>
+          <p class="divider"></p>
+          <p class="p-padding">
+            はじめまして。村上 大介と申します。東京でC#を扱うサーバーサイドエンジニアをしています。<br>
+            プログラミング歴は1年程で、今はRuby on Railsで実際のWebページを作りつつ言語の学習に励んでおります。<br>
+            好きな食べ物は焼肉とカレーとカルボナーラです。
+          </p>
+        </div>        
+      </div>
+
+      <h3 class="center border-bottom" id="works">
+        <i class="material-icons">favorite</i>Works
+      </h3>
+      <div class="col s12 m12 center p-padding">
+        <div class="slider">
+            <ul class="slides">
+                <li><img src="img/serviceBg02.jpg" alt="サンプル" /></li>
+                <li>
+                    <img src="img/serviceBg01.jpg" alt="サンプル" />
+                    <div class="caption left-align cyan-text">
+                        <h3>スライダーも簡単実装！！</h3>
+                        <h5 class="light">動きもスムーズで、キャプション付き！！</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/serviceBg03.jpg" alt="サンプル" />
+                    <div class="caption right-align blue-grey-text text-darken-3">
+                        <h3>アニメーションも！！！</h3>
+                        <h5 class="light">キャプションアニメーションは嬉しい！</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+
+      <h3 class="center border-bottom" id="contact">
+        <i class="material-icons">mail</i>Contact
+      </h3>
+      <div class="col s12 m12 center p-padding">
+        <div class="block z-depth-1">
+          test
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
-<div id="works" class="section category works">
-  <h1 class="category-title"><i class="material-icons">favorite</i>Works</h1>      
-  <div class="container-separator-black"></div>
-</div>
+
 <div id="contact" class="section category contact">
-  <h1 class="category-title"><i class="material-icons">mail</i>Contact</h1>            
+  <h1 class="category-title"><i class="material-icons">mail</i>Contact</h1>         
   <div class="container-separator-black"></div>
   <div>
     <div style="text-align:center; font-size:20px; margin-bottom:20px;">mail: daimura10@gmail.com</div>

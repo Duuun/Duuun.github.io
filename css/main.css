@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+@media only screen and (max-width: 992px) {
+  #index-banner .section {
+    top: 10%;
+  }
+  .parallax-container .section {
+    position: absolute;
+    top: 30%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu-icons {
+    display: none;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +27,24 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold !important;
 }
+p {
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+.info {
+  height: auto;
+  min-height: 500px;
+}
+.m-padding {
+  padding: 5% 0;
+}
 .parallax-container {
   -moz-box-shadow: 0 5px 8px rgba(0,0,0,0.4);
   -webkit-box-shadow: 0 5px 8px rgba(0,0,0,0.4);
   box-shadow: 0 5px 8px rgba(0,0,0,0.4);
 }
-.parallax-container .parallax {
-  z-index: 0 !important;
+.parallax-container .section {
+  width: 100%;
 }
 .back-img {
   background-image: url(../img/top-header.jpg);
@@ -70,11 +97,10 @@ ul.menu {
 }
 ul.menu li {
   display: table-cell;
-  padding: 0 8px;
 }
 ul.menu li a {
   font-size: 30px;
-  padding: 16px 32px;  
+  padding: 0 34px;  
 }
 ul.menu li:hover {  
   -moz-transform: rotate(10deg);
