@@ -43,10 +43,6 @@
 .top-msg {
   font-size: 1.8em;
 }
-.block {
-  padding: 10px;
-  background-color: white;
-}
 .border-bottom {
   border-bottom: 1px solid black;
   padding: 4%;
@@ -58,6 +54,11 @@
   padding: 0 15px;
   margin-top: 20px;
   margin-bottom: 20px;
+  background-color: white;
+  min-height: 542px;
+}
+.menu-icons {
+  padding-top: 60px;
 }
 </style>
 <header>
@@ -81,10 +82,10 @@
     </div>
   </div>
 </header>
-<div class="container m-padding">
+<div class="container">
   <div class="section">
     <div class="row">
-      <h3 class="center border-bottom">
+      <h3 class="center border-bottom" id="profile">
         <i class="Medium material-icons">person</i>Profile
       </h3>
       <div class="col s12 m4">
@@ -123,13 +124,16 @@
           <h6 class="center">Hobby</h6>
           <p class="divider"></p>
           <p class="p-padding">
-            はじめまして。村上 大介と申します。東京でC#を扱うサーバーサイドエンジニアをしています。<br>
-            プログラミング歴は1年程で、今はRuby on Railsで実際のWebページを作りつつ言語の学習に励んでおります。<br>
-            好きな食べ物は焼肉とカレーとカルボナーラです。
+            アニメ、ダンス
           </p>
         </div>        
       </div>
-
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="section">
+    <div class="row">
       <h3 class="center border-bottom" id="works">
         <i class="material-icons">favorite</i>Works
       </h3>
@@ -154,7 +158,12 @@
             </ul>
         </div>
       </div>
-
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="section">
+    <div class="row">
       <h3 class="center border-bottom" id="contact">
         <i class="material-icons">mail</i>Contact
       </h3>
@@ -163,12 +172,14 @@
           test
         </div>
       </div>
-
     </div>
   </div>
 </div>
-  <footer class="page-footer">
-    &copy; 2018 Duuun
-  </footer>
+<footer class="page-footer">
+  &copy; 2018 Duuun
+</footer>
+<script type="text/javascript">
+
+</script>
 </body>
 </html>
