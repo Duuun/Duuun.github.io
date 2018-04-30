@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.bxslider.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>  
@@ -60,6 +61,24 @@
 .menu-icons {
   padding-top: 60px;
 }
+.contact-wrapper {
+  display: table;
+  margin: 20px auto 20px;
+  table-layout: fixed;
+}
+.contacts {
+  display: table-cell;
+}
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  margin: 10px 30px;
+  border: 3px solid;
+  border-radius: 50%;
+  color: gray;
+  font-size: 2.3rem;
+  line-height: 55px;
+}
 </style>
 <header>
   <div id="index-banner" class="parallax-container info">
@@ -70,7 +89,7 @@
         <div class="row center menu-icons">
           <ul class="menu">
             <li class="menu-home"><a href="#"><i class="material-icons">home</i><span>Home</span></a></li>
-            <li class="menu-profile"><a href="#profile"><i class="material-icons">person</i>Profile</a></li>
+            <li class="menu-profile"><a href="#profile"><i class="material-icons">person</i>Profile</a></li>            
             <li class="menu-works"><a href="#works"><i class="material-icons">favorite</i>Works</a></li>
             <li class="menu-contact"><a href="#contact"><i class="material-icons">mail</i>Contact</a></li>
           </ul>
@@ -85,7 +104,7 @@
 <div class="container">
   <div class="section">
     <div class="row">
-      <h3 class="center border-bottom" id="profile">
+      <h3 class="center" id="profile">
         <i class="Medium material-icons">person</i>Profile
       </h3>
       <div class="col s12 m4">
@@ -134,22 +153,22 @@
 <div class="container">
   <div class="section">
     <div class="row">
-      <h3 class="center border-bottom" id="works">
+      <h3 class="center" id="works">
         <i class="material-icons">favorite</i>Works
       </h3>
       <div class="col s12 m12 center p-padding">
-        <div class="slider">
+        <div class="slider z-depth-1 hoverable">
             <ul class="slides">
-                <li><img src="img/serviceBg02.jpg" alt="サンプル" /></li>
+                <li><img src="img/top-header.jpg" alt="サンプル" /></li>
                 <li>
-                    <img src="img/serviceBg01.jpg" alt="サンプル" />
+                    <img src="img/top-header.jpg" alt="サンプル" />
                     <div class="caption left-align cyan-text">
                         <h3>スライダーも簡単実装！！</h3>
                         <h5 class="light">動きもスムーズで、キャプション付き！！</h5>
                     </div>
                 </li>
                 <li>
-                    <img src="img/serviceBg03.jpg" alt="サンプル" />
+                    <img src="img/top-header.jpg" alt="サンプル" />
                     <div class="caption right-align blue-grey-text text-darken-3">
                         <h3>アニメーションも！！！</h3>
                         <h5 class="light">キャプションアニメーションは嬉しい！</h5>
@@ -164,12 +183,22 @@
 <div class="container">
   <div class="section">
     <div class="row">
-      <h3 class="center border-bottom" id="contact">
+      <h3 class="center" id="contact">
         <i class="material-icons">mail</i>Contact
       </h3>
       <div class="col s12 m12 center p-padding">
-        <div class="block z-depth-1">
-          test
+        <div class="contact-wrapper">
+          <div class="contacts">
+            <a href="https://twitter.com/muramura232" target="_blank">
+              <i class="contact-icon fab fa-twitter z-depth-1"></i>
+            </a>
+            <a href="https://github.com/Duuun" target="_blank">
+              <i class="contact-icon fab fa-github z-depth-1"></i>
+            </a>
+            <a href="mailto:daimura10@gmail.com">
+              <i class="contact-icon fas fa-envelope z-depth-1"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
