@@ -28,20 +28,3 @@ $(function() {
     return false;
   });
 });
-
-/* bxslider */
-$(document).ready(function(){
-  $('bxslider').bxSlider({
-    mode: 'vartical'
-  });
-});
-
-/* materialize */
-var elem = document.querySelector('.sidenav');
-var instance = M.Sidenav.init(elem, options);
-
-// Or with jQuery
-
-$(document).ready(function(){
-  $('.sidenav').sidenav();
-});

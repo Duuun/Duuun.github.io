@@ -156,25 +156,25 @@
       <h3 class="center" id="works">
         <i class="material-icons">favorite</i>Works
       </h3>
-      <div class="col s12 m12 center p-padding">
-        <div class="slider z-depth-1 hoverable">
-            <ul class="slides">
-                <li><img src="img/top-header.jpg" alt="サンプル" /></li>
-                <li>
-                    <img src="img/top-header.jpg" alt="サンプル" />
-                    <div class="caption left-align cyan-text">
-                        <h3>スライダーも簡単実装！！</h3>
-                        <h5 class="light">動きもスムーズで、キャプション付き！！</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/top-header.jpg" alt="サンプル" />
-                    <div class="caption right-align blue-grey-text text-darken-3">
-                        <h3>アニメーションも！！！</h3>
-                        <h5 class="light">キャプションアニメーションは嬉しい！</h5>
-                    </div>
-                </li>
-            </ul>
+      <div class="carousel carousel-slider center">
+        <div class="carousel-fixed-item center">
+          <a class="btn waves-effect white grey-text darken-text-2">Watch!!</a>
+        </div>
+        <div class="carousel-item red white-text" href="#one!">
+          <h2>First Panel</h2>
+          <p class="white-text">This is your first panel</p>
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+          <h2>Second Panel</h2>
+          <p class="white-text">This is your second panel</p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+          <h2>Third Panel</h2>
+          <p class="white-text">This is your third panel</p>
+        </div>
+        <div class="carousel-item blue white-text" href="#four!">
+          <h2>Fourth Panel</h2>
+          <p class="white-text">This is your fourth panel</p>
         </div>
       </div>
     </div>
@@ -207,8 +207,23 @@
 <footer class="page-footer">
   &copy; 2018 Duuun
 </footer>
-<script type="text/javascript">
+<script>
+/* materialize */
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});
 
+$('.carousel.carousel-slider').carousel({
+  fullWidth: true,
+  indicators: true
+});
+
+/* bxslider */
+$(document).ready(function(){
+  $('bxslider').bxSlider({
+    mode: 'vartical'
+  });
+});
 </script>
 </body>
 </html>
