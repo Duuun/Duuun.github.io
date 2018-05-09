@@ -164,7 +164,7 @@ ul.menu li.menu-contact a {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: white;
-  min-height: 542px;
+  min-height: 480px;
 }
 .contact-wrapper {
   display: table;
@@ -183,6 +183,7 @@ ul.menu li.menu-contact a {
   color: gray;
   font-size: 2.3rem;
   line-height: 55px;
+  padding: 10px;
 }
 .contact-icon:hover {
   color: rgb(231, 103, 146);
@@ -195,7 +196,7 @@ ul.menu li.menu-contact a {
   color: white;
 }
 .test {
-  background-image: url(img/mysite.png);
+  background-image: url(../img/mysite.png);
   background-position: center center;
   background-size: cover;
 }
@@ -227,7 +228,6 @@ ul.menu li.menu-contact a {
   background-color: #fbfaef;
   color: #7c5341;
 }
-
 .profile-item {
   width: 72%;
   padding: 0 8px;
@@ -290,6 +290,21 @@ ul.social-icons li {
 }
 i.profile-icon {
   margin-top: 16px;
+}
+.block h5 {
+  margin-top: 2rem;
+}
+.block div.p-padding, .block div.p-padding p {
+  font-size: 1rem;
+}
+div.p-padding .divider {
+  display: block;
+  margin: 7px 0;
+}
+div.p-padding span {
+  font-weight: bold;
+  line-height: 2rem;
+  font-size: 1.2rem;
 }
 
 /* works */
