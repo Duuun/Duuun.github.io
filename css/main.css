@@ -33,6 +33,33 @@ p {
   line-height: 2rem;
   font-size: 1.1rem;
 }
+img {
+  border: 0;
+}
+
+/* header */
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+  display: block;
+}
+.header img {
+  max-height: 185px;
+  border-radius: 50%;
+}
+.header h1 {
+  margin-top: 0.9em;
+  padding: 0;
+  font-weight: 300;
+  font-size: 2.3em;
+  -webkit-backface-visibility: hidden;
+  color: #fff;
+}
+.top-msg {
+  font-size: 1.4em;
+  color: #fff;
+}
 .info {
   height: auto;
   min-height: 500px;
@@ -123,6 +150,61 @@ ul.menu li.menu-works a {
 ul.menu li.menu-contact a {
   color: #f7c6bd;
 }
+
+/* all */
+.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 4%;
+}
+.p-padding {
+  padding: 5%;
+}
+.block {
+  padding: 0 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  min-height: 542px;
+}
+.contact-wrapper {
+  display: table;
+  margin: 20px auto 20px;
+  table-layout: fixed;
+}
+.contacts {
+  display: table-cell;
+}
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  margin: 10px 30px;
+  border: 3px solid;
+  border-radius: 50%;
+  color: gray;
+  font-size: 2.3rem;
+  line-height: 55px;
+}
+.contact-icon:hover {
+  color: rgb(231, 103, 146);
+}
+.btn-works:hover {
+  background-color: pink !important;
+  color: #fff !important;
+}
+.carousel-item h2 {
+  color: white;
+}
+.test {
+  background-image: url(img/mysite.png);
+  background-position: center center;
+  background-size: cover;
+}
+.header-color {
+  background-color: #f18d1d;
+}
+.menu li a {
+  color: #404a72 !important;
+}
 .material-icons {
   font-size: 30px !important;
   margin-right: 12px;
@@ -138,6 +220,7 @@ ul.menu li.menu-contact a {
 .category-title > .material-icons {
   font-size: 40px !important;
 }
+
 /* profile */
 .profile {
   width: 100%;
@@ -205,13 +288,11 @@ ul.social-icons li {
 .msg-pad {
   padding: 0 10px;
 }
+i.profile-icon {
+  margin-top: 16px;
+}
 
 /* works */
-
-/* .works {
-  background-color: #e3364a;
-  color: #fbfaef;
-} */
 .swiper-container {
   width: 600px;
   height: 300px;
