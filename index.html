@@ -79,6 +79,20 @@
   font-size: 2.3rem;
   line-height: 55px;
 }
+.contact-icon:hover {
+  color: rgb(231, 103, 146);
+}
+.btn-works:hover {
+  background-color: lightblue !important;
+}
+.carousel-item h2 {
+  color: white;
+}
+.test {
+  background-image: url(img/mysite.png);
+  background-position: center center;
+  background-size: cover;
+}
 </style>
 <header>
   <div id="index-banner" class="parallax-container info">
@@ -156,13 +170,11 @@
       <h3 class="center" id="works">
         <i class="material-icons">favorite</i>Works
       </h3>
-      <div class="carousel carousel-slider center">
+      <div class="carousel carousel-slider center z-depth-1">
         <div class="carousel-fixed-item center">
-          <a class="btn waves-effect white grey-text darken-text-2">Watch!!</a>
+          <a class="btn-works btn waves-effect white grey-text darken-text-2 hoverable z-depth-2">Check!!</a>
         </div>
-        <div class="carousel-item red white-text" href="#one!">
-          <h2>First Panel</h2>
-          <p class="white-text">This is your first panel</p>
+        <div class="carousel-item red white-text test" href="#one!">
         </div>
         <div class="carousel-item amber white-text" href="#two!">
           <h2>Second Panel</h2>
@@ -190,13 +202,13 @@
         <div class="contact-wrapper">
           <div class="contacts">
             <a href="https://twitter.com/muramura232" target="_blank">
-              <i class="contact-icon fab fa-twitter z-depth-1"></i>
+              <i class="contact-icon fab fa-twitter z-depth-1 hoverable"></i>
             </a>
             <a href="https://github.com/Duuun" target="_blank">
-              <i class="contact-icon fab fa-github z-depth-1"></i>
+              <i class="contact-icon fab fa-github z-depth-1 hoverable"></i>
             </a>
             <a href="mailto:daimura10@gmail.com">
-              <i class="contact-icon fas fa-envelope z-depth-1"></i>
+              <i class="contact-icon fas fa-envelope z-depth-1 hoverable"></i>
             </a>
           </div>
         </div>
