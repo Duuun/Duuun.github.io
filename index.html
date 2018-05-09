@@ -21,28 +21,30 @@
 </head>
 <body>
 <style type="text/css">
-.parallax img {
-  bottom: 0;
-  display: block;
-  position: absolute;
+img {
+  border: 0;
+}
+.header {
   width: 100%;
-  min-height: 100%;
-  background-position: center;
+  text-align: center;
+  padding: 2em;
+  display: block;
 }
-.parallax-container {
-  position: relative;
-  overflow: hidden;
-  height: 500px;
+.header img {
+  max-height: 238px;
+  border-radius: 50%;
 }
-.parallax {
-  background-image: url("img/top-header.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  -moz-background-size: 100% 100%;
-  background-size: 100% 100%;
+.header h1 {
+  margin-top: 0.9em;
+  padding: 0;
+  font-weight: 300;
+  font-size: 2.3em;
+  -webkit-backface-visibility: hidden;
+  color: #fff;
 }
 .top-msg {
-  font-size: 1.8em;
+  font-size: 1.4em;
+  color: #fff;
 }
 .border-bottom {
   border-bottom: 1px solid black;
@@ -57,9 +59,6 @@
   margin-bottom: 20px;
   background-color: white;
   min-height: 542px;
-}
-.menu-icons {
-  padding-top: 60px;
 }
 .contact-wrapper {
   display: table;
@@ -93,9 +92,34 @@
   background-position: center center;
   background-size: cover;
 }
+.header-color {
+  background-color: #f18d1d;
+}
+.menu li a {
+  color: #404a72 !important;
+}
 </style>
-<header>
+<header class="header header-color z-depth-1">
+  <img src="img/profile-icon.jpg" alt="profile" class="circle responsive-img">
+  <h1>Daisuke Murakami</h1>
+  <p class="top-msg"></p>
+  <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row">
+          <ul class="menu hide-on-med-and-down">
+            <li class="menu-home"><a href="#"><i class="material-icons">home</i><span>Home</span></a></li>
+            <li class="menu-profile"><a href="#profile"><i class="material-icons">person</i>Profile</a></li>            
+            <li class="menu-works"><a href="#works"><i class="material-icons">favorite</i>Works</a></li>
+            <li class="menu-contact"><a href="#contact"><i class="material-icons">mail</i>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  <!--
   <div id="index-banner" class="parallax-container info">
+    <div class="parallax top">
+      <img src="img/top-header.jpg" alt="top" style="bottom: 0px; display: block;">
+    </div>
     <div class="section no-pad-bot">
       <div class="container">
         <h1 class="header center white-text text-darken-1">Daisuke Murakami</h1>
@@ -109,11 +133,10 @@
           </ul>
         </div>
       </div>
-    </div>
-    <div class="parallax top">
-      <img src="img/top-header.jpg" alt="top" style="bottom: 0px; display: block;">
-    </div>
+    </div>    
   </div>
+-->
+
 </header>
 <div class="container">
   <div class="section">
@@ -179,14 +202,6 @@
         <div class="carousel-item amber white-text" href="#two!">
           <h2>Second Panel</h2>
           <p class="white-text">This is your second panel</p>
-        </div>
-        <div class="carousel-item green white-text" href="#three!">
-          <h2>Third Panel</h2>
-          <p class="white-text">This is your third panel</p>
-        </div>
-        <div class="carousel-item blue white-text" href="#four!">
-          <h2>Fourth Panel</h2>
-          <p class="white-text">This is your fourth panel</p>
         </div>
       </div>
     </div>
