@@ -49,16 +49,29 @@ img {
   border-radius: 50%;
 }
 .header h1 {
-  margin-top: 0.9em;
+  margin: 0.9em 0 0 0;
   padding: 0;
   font-weight: 300;
   font-size: 2.3em;
   -webkit-backface-visibility: hidden;
   color: #fff;
+  line-height: 1.4;
 }
 .top-msg {
   font-size: 1.4em;
-  color: #fff;
+  color: #fff;  
+  margin-top: .9em;
+}
+.header-msg {
+  font-size: 1em;
+  margin: .1em 0 .6em;
+  display: inline-block;
+  font-style: italic;
+  padding: 6px 10px;
+  background: #00b5de;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  line-height: 1;
 }
 .info {
   height: auto;
