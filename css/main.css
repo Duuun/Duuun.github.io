@@ -178,6 +178,7 @@ ul.menu li.menu-contact a {
   margin-bottom: 20px;
   background-color: white;
   min-height: 520px;
+  border-radius: 15px;
 }
 .contact-wrapper {
   display: table;
