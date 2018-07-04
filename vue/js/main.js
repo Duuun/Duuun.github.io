@@ -23,7 +23,12 @@ new Vue({
     el: '#app',
     data: {
         newItem: '',
-        todos: [],
+        todos: [
+            {
+                title: '買い物',
+                isDone: false
+            }
+        ],
         total: 0
     },
     watch: {
