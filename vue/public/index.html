@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Vue.js App</title>
+  <title>TodoList - Duuun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
   <link rel="shortcut icon" href="favicon.png">
@@ -22,6 +22,7 @@
     <div class="row">
       <form class="col s12">
         <div class="row">
+          <a href="../../">TOP</a>
           <div class="input-field col s12">
             <i class="material-icons prefix" @click="addItem" style="cursor:pointer;">add_circle</i>
             <input id="icon_prefix" type="text" class="validate" v-model="newItem">
@@ -33,7 +34,6 @@
         <li class="collection-header">
           <h5>やることリスト
             <span class="new badge pink lighten-1">{{ remaining }}</span>
-            <!-- <span class="badge blue lighten-2">Like: {{ total }}</span> -->
           </h5>
         </li>
         <li v-for="(todo, index) in todos" class="collection-item">
@@ -45,7 +45,6 @@
             <a href="#!" class="secondary-content" @click="deleteItem(index)">
               <i class="material-icons">cancel</i>
             </a>
-            <!-- <like-component @increment="incrementTotal"></like-component> -->
           </div>
         </li>
       </ul>
