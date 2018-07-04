@@ -345,3 +345,7 @@ span.batch {
   padding: 8px 17px !important;
   width: 100%;
 }
+.scroll-effect:hover {
+  margin-top: -6px;
+  transition: .5s;
+}

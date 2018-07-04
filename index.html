@@ -23,8 +23,6 @@
 </head>
 
 <body>
-  <style type="text/css">
-  </style>
   <header class="header header-color z-depth-1">
     <img src="img/profile-icon.jpg" alt="profile" class="circle responsive-img">
     <h1>Daisuke Murakami</h1>
@@ -197,6 +195,12 @@
       </div>
     </div>
   </div>
+  <!-- scroll-btn -->
+  <div class="scroll-up fixed-action-btn hide-on-med-and-down" style="bottom:75px; right:60px">
+    <a href="#" class="btn-floating btn-large" style="background: #0082ae;">
+      <i class="Medium material-icons scroll-effect">arrow_upward</i>
+    </a>
+  </div>
   <footer class="page-footer">
     &copy; 2018 Duuun
   </footer>
@@ -215,6 +219,27 @@
     $(document).ready(function () {
       $('bxslider').bxSlider({
         mode: 'vartical'
+      });
+    });
+
+    /* scroll-up */
+    $(function () {
+      const topBtn = $('.scroll-up');
+      topBtn.hide();
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 250) {
+          topBtn.fadeIn();
+        } else {
+          topBtn.fadeOut();
+        }
+      });
+
+      topBtn.click(function () {
+        $('body, html').animate({
+          scrollTop: 0
+        }, 400);
+        return false;
       });
     });
   </script>
