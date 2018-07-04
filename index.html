@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,66 +11,83 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.bxslider.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>  
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
 </head>
-<body>
-<style type="text/css">
 
-</style>
-<header class="header header-color z-depth-1">
-  <img src="img/profile-icon.jpg" alt="profile" class="circle responsive-img">
-  <h1>Daisuke Murakami</h1>
-  <p class="header-msg">Serverside Engineer</p>
-  <p class="top-msg"></p>
-  <div class="section no-pad-bot">
-    <div class="container">
-      <div class="row">
-        <ul class="menu hide-on-med-and-down">
-          <li class="menu-home"><a href="#"><i class="material-icons">home</i><span>Home</span></a></li>
-          <li class="menu-profile"><a href="#profile"><i class="material-icons">person</i>Profile</a></li>            
-          <li class="menu-works"><a href="#works"><i class="material-icons">favorite</i>Works</a></li>
-          <li class="menu-contact"><a href="#contact"><i class="material-icons">mail</i>Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div> 
-</header>
-<div class="container">
-  <div class="section">
-    <div class="row">
-      <h3 class="center" id="profile">
-        <i class="Medium material-icons">person</i>Profile
-      </h3>
-      <div class="col s12 m4">
-        <div class="block z-depth-1">
-          <div class="center">
-              <i class="fas fa-user-circle fa-5x profile-icon" style="color: #ffe600;"></i>
-          </div>
-          <h5 class="center">Introduction</h5>
-          <p class="divider"></p>
-          <div class="p-padding">
-            <p>Hi. I'm Daisuke Murakami. I'm a server side engineer handling C # in Tokyo.<br>
-              I've been programming for about a year now and I'm currently working on Ruby on Rails learning languages ​​while making actual web pages.<br>
-              My favorite foods are yakiniku, curry and carbonara.</p>
-          </div>
+<body>
+  <style type="text/css">
+  </style>
+  <header class="header header-color z-depth-1">
+    <img src="img/profile-icon.jpg" alt="profile" class="circle responsive-img">
+    <h1>Daisuke Murakami</h1>
+    <p class="header-msg">Serverside Engineer</p>
+    <p class="top-msg"></p>
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row">
+          <ul class="menu hide-on-med-and-down">
+            <li class="menu-home">
+              <a href="#">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="menu-profile">
+              <a href="#profile">
+                <i class="material-icons">person</i>Profile</a>
+            </li>
+            <li class="menu-works">
+              <a href="#works">
+                <i class="material-icons">favorite</i>Works</a>
+            </li>
+            <li class="menu-contact">
+              <a href="#contact">
+                <i class="material-icons">mail</i>Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="col s12 m4">
-        <div class="block z-depth-1">
-          <div class="center">
-              <i class="fas fa-code fa-5x profile-icon" style="color: #0db8d9;"></i>
+    </div>
+  </header>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <h3 class="center" id="profile">
+          <i class="Medium material-icons">person</i>Profile
+        </h3>
+        <div class="col s12 m4">
+          <div class="block z-depth-1">
+            <div class="center">
+              <i class="fas fa-user-circle fa-5x profile-icon" style="color: #ffe600;"></i>
+            </div>
+            <h5 class="center">Introduction</h5>
+            <p class="divider"></p>
+            <div class="p-padding">
+              <p>Hi. I'm Daisuke Murakami. I'm a server side engineer handling C # in Tokyo.
+                <br> I've been programming for about a year now and I'm currently working on Ruby on Rails learning languages
+                ​​while making actual web pages.
+                <br> My favorite foods are yakiniku, curry and carbonara.</p>
+            </div>
           </div>
-          <h5 class="center">Skills</h5>
-          <p class="divider"></p>
-          <div class="p-padding">
-            <span class="im">> Intermediate</span><br>
+        </div>
+        <div class="col s12 m4">
+          <div class="block z-depth-1">
+            <div class="center">
+              <i class="fas fa-code fa-5x profile-icon" style="color: #0db8d9;"></i>
+            </div>
+            <h5 class="center">Skills</h5>
+            <p class="divider"></p>
+            <div class="p-padding">
+              <span class="im">> Intermediate</span>
+              <br>
               <span class="batch">#VB.NET</span>
               <span class="batch">#C#</span>
               <span class="batch">#SQLServer</span>
@@ -77,8 +95,9 @@
               <span class="batch">#jQuery</span>
               <span class="batch">#HTML5</span>
               <span class="batch">#CSS3</span>
-            <p class="divider"></p>
-            <span class="bg">> Beginner</span><br>
+              <p class="divider"></p>
+              <span class="bg">> Beginner</span>
+              <br>
               <span class="batch">#Ruby</span>
               <span class="batch">#Ruby on Rails5</span>
               <span class="batch">#Vue.js</span>
@@ -86,112 +105,119 @@
               <span class="batch">#Java</span>
               <span class="batch">#Linux</span>
               <span class="batch">#Git</span>
-            <p class="divider"></p>
-            <span>> Favorite CSS</span><br>
+              <p class="divider"></p>
+              <span>> Favorite CSS</span>
+              <br>
               <span class="batch">#Materialize</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col s12 m4">
-        <div class="block z-depth-1">
-          <div class="center">
+        <div class="col s12 m4">
+          <div class="block z-depth-1">
+            <div class="center">
               <i class="fas fa-comment-dots fa-5x profile-icon" style="color: #a2ca0e;"></i>
-          </div>
-          <h5 class="center">My life</h5>
-          <p class="divider"></p>
-          <div class="p-padding">
-            <span class="im">> Goal</span><br>
-            Make society where people can live with hope.<br>
+            </div>
+            <h5 class="center">My life</h5>
             <p class="divider"></p>
-            <span class="im">> Hobby</span><br>
+            <div class="p-padding">
+              <span class="im">> Goal</span>
+              <br> Make society where people can live with hope.
+              <br>
+              <p class="divider"></p>
+              <span class="im">> Hobby</span>
+              <br>
               <span class="batch">#Cycling</span>
               <span class="batch">#Running</span>
               <span class="batch">#Hiking</span>
               <span class="batch">#Tennis</span>
               <span class="batch">#Gaming</span>
               <span class="batch">#Animation</span>
-            <p class="divider"></p>
-            <span>> DoB</span><br>
+              <p class="divider"></p>
+              <span>> DoB</span>
+              <br>
               <span class="batch">#October</span>
               <span class="batch">#2nd</span>
               <span class="batch">#1993</span>
-            <p class="divider"></p>
-            <span>> Place of birth</span><br>
+              <p class="divider"></p>
+              <span>> Place of birth</span>
+              <br>
               <span class="batch">#Hyogo</span>
               <span class="batch">#Japan</span>
-            <p class="divider"></p>
-            <span>> Motto</span><br>
-              Originality is born in imitation.
-          </div>
-        </div>        
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="section">
-    <div class="row">
-      <h3 class="center" id="works">
-        <i class="material-icons">favorite</i>Works
-      </h3>
-      <div class="carousel carousel-slider center z-depth-1">
-        <div class="carousel-fixed-item center">
-          <a class="btn-works btn waves-effect white grey-text darken-text-2 hoverable z-depth-4">Check!!</a>
-        </div>
-        <div class="carousel-item red white-text test" href="#one!">
-        </div>
-        <div class="carousel-item amber white-text" href="#two!">
-          <h2>Coming soon...</h2>
-          <p class="white-text"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="section">
-    <div class="row">
-      <h3 class="center" id="contact">
-        <i class="material-icons">mail</i>Contact
-      </h3>
-      <div class="col s12 m12 center p-padding">
-        <div class="contact-wrapper">
-          <div class="contacts">
-            <a href="https://twitter.com/muramura232" target="_blank">
-              <i class="contact-icon fab fa-twitter z-depth-1 hoverable"></i>
-            </a>
-            <a href="https://github.com/Duuun" target="_blank">
-              <i class="contact-icon fab fa-github z-depth-1 hoverable"></i>
-            </a>
-            <a href="mailto:daimura10@gmail.com">
-              <i class="contact-icon fas fa-envelope z-depth-1 hoverable"></i>
-            </a>
+              <p class="divider"></p>
+              <span>> Motto</span>
+              <br> Originality is born in imitation.
+              <a href="vue/public/index.html">リンク</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<footer class="page-footer">
-  &copy; 2018 Duuun
-</footer>
-<script>
-/* materialize */
-$(document).ready(function(){
-  $('.sidenav').sidenav();
-});
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <h3 class="center" id="works">
+          <i class="material-icons">favorite</i>Works
+        </h3>
+        <div class="carousel carousel-slider center z-depth-1">
+          <div class="carousel-fixed-item center">
+            <a class="btn-works btn waves-effect white grey-text darken-text-2 hoverable z-depth-4">Check!!</a>
+          </div>
+          <div class="carousel-item red white-text test" href="#one!">
+          </div>
+          <div class="carousel-item amber white-text" href="#two!">
+            <h2>Coming soon...</h2>
+            <p class="white-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <h3 class="center" id="contact">
+          <i class="material-icons">mail</i>Contact
+        </h3>
+        <div class="col s12 m12 center p-padding">
+          <div class="contact-wrapper">
+            <div class="contacts">
+              <a href="https://twitter.com/muramura232" target="_blank">
+                <i class="contact-icon fab fa-twitter z-depth-1 hoverable"></i>
+              </a>
+              <a href="https://github.com/Duuun" target="_blank">
+                <i class="contact-icon fab fa-github z-depth-1 hoverable"></i>
+              </a>
+              <a href="mailto:daimura10@gmail.com">
+                <i class="contact-icon fas fa-envelope z-depth-1 hoverable"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer">
+    &copy; 2018 Duuun
+  </footer>
+  <script>
+    /* materialize */
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
 
-$('.carousel.carousel-slider').carousel({
-  fullWidth: true,
-  indicators: true
-});
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+    });
 
-/* bxslider */
-$(document).ready(function(){
-  $('bxslider').bxSlider({
-    mode: 'vartical'
-  });
-});
-</script>
+    /* bxslider */
+    $(document).ready(function () {
+      $('bxslider').bxSlider({
+        mode: 'vartical'
+      });
+    });
+  </script>
 </body>
+
 </html>
