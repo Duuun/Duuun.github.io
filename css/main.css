@@ -160,6 +160,11 @@ img {
   background-color: black;
   opacity: 0.8;
 }
+
+/**********************************************
+* menu / header
+**********************************************/
+
 ul.menu {
   display: table;
   margin: 0 auto;
@@ -384,49 +389,3 @@ span.batch {
   margin-top: -6px;
   transition: .5s;
 }
-
-/**********************************************
-* animation
-**********************************************/
-.hide {
-  display: none;
-}
-
-/**********************************************
-* keyframes
-**********************************************/
-
-/* @keyframes scale {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(90deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes fall-1 {
-  from {
-    transform: translateY(-100%) rotate(30deg);
-  }
-  to {
-    transform: translateY(0%) rotate(0deg);
-  }
-}
-@keyframes fall-2 {
-  from {
-    transform: translateY(-100%) rotate(-30deg);
-  }
-  to {
-    transform: translateY(0%) rotate(0deg);
-  }
-} */
