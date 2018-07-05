@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function () {
   var array = [
     "I would like to be in bedding forever if I can :D",
     "I wish I could get the money without working :D",
@@ -17,14 +17,15 @@ window.onload = function(){
   $(".top-msg").text(msg);
 }
 
-$(function() {
+$(function () {
   'use strict';
-  $('a[href^=#]').click(function(){
+
+  $('a[href^=#]').click(function () {
     var speed = 400;
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
     var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+    $("html, body").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
 });

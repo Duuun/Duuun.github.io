@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/**********************************************
+* media query
+**********************************************/
+
 @media only screen and (max-width: 992px) {
   #index-banner .section {
     top: 10%;
@@ -16,6 +20,10 @@
   }
 }
 
+/**********************************************
+* body
+**********************************************/
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +32,10 @@
 body {
   font-weight: bold;
   background-color: #f5f5f5;
+  /* fadein animation */
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+  -moz-animation: fadeIn 2s ease 0s 1 normal;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold !important;
@@ -36,8 +48,24 @@ p {
 img {
   border: 0;
 }
+/* fadein animation */
+@keyframes fadeIn {
+  0% {opacity: 0.2;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
 
-/* header */
+/**********************************************
+* header
+**********************************************/
+
 .header {
   width: 100%;
   text-align: center;
@@ -163,8 +191,6 @@ ul.menu li.menu-works a {
 ul.menu li.menu-contact a {
   color: #f7c6bd;
 }
-
-/* all */
 .border-bottom {
   border-bottom: 1px solid black;
   padding: 4%;
@@ -236,7 +262,10 @@ ul.menu li.menu-contact a {
   font-size: 40px !important;
 }
 
-/* profile */
+/**********************************************
+* profile
+**********************************************/
+
 .profile {
   width: 100%;
   background-color: #fbfaef;
@@ -328,7 +357,10 @@ span.batch {
   border-radius: .4rem;
 }
 
-/* works */
+/**********************************************
+* works
+**********************************************/
+
 .swiper-container {
   width: 600px;
   height: 300px;
@@ -337,7 +369,10 @@ span.batch {
   width: 150px;
 }
 
-/* footer */
+/**********************************************
+* footer
+**********************************************/
+
 .page-footer {
   opacity: 0.8;
   background: linear-gradient(-135deg, gray, black) !important;
@@ -349,3 +384,49 @@ span.batch {
   margin-top: -6px;
   transition: .5s;
 }
+
+/**********************************************
+* animation
+**********************************************/
+.hide {
+  display: none;
+}
+
+/**********************************************
+* keyframes
+**********************************************/
+
+/* @keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fall-1 {
+  from {
+    transform: translateY(-100%) rotate(30deg);
+  }
+  to {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
+@keyframes fall-2 {
+  from {
+    transform: translateY(-100%) rotate(-30deg);
+  }
+  to {
+    transform: translateY(0%) rotate(0deg);
+  }
+} */

@@ -1,3 +1,13 @@
+$(function () {
+    setTimeout(function () {
+        $('.motion').addClass('hide');
+    }, 1000);
+});
+
+$('.motion').on('webkitAnimationEnd', function () {
+    $('.motion').addClass('hide');
+})
+
 const likeComponent = Vue.extend({
     props: {
         message: {

@@ -21,6 +21,76 @@ li.done {
 .secondary-content {
     margin-right: 10px;
 }
-.test {
-    color: red;
+.hide {
+    display: none;
+}
+
+/**********************************************
+* animation
+**********************************************/
+
+.motion,
+.motion div {
+  position :absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/**********************************************
+* fadeIn animation
+**********************************************/
+
+#app {
+  /* fadein animation */
+  animation: fadeIn 2s ease 0.5s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0.5s 1 normal;
+  -moz-animation: fadeIn 2s ease 0.5s 1 normal;
+}
+@keyframes fadeIn {
+  0% {opacity: 0.3;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes fadeIn {
+  0% {opacity: 0.3;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0.3;}
+  100% {opacity: 1;}
+}
+
+/**********************************************
+* down animation
+**********************************************/
+
+.motion div {
+  transform-origin: right top;
+  transform: rotate(90deg);
+}
+.motion div:nth-child(1) {
+  background-color: lightblue;
+  animation: rotate .5s ease 0s forwards;
+}
+.motion div:nth-child(2) {
+  background-color: lightpink;
+  animation: rotate .5s ease .2s forwards;
+}
+.motion div:nth-child(3) {
+  background-color: lightgreen;
+  animation: rotate .5s ease .4s forwards;
+}
+@keyframes rotate {
+  from {transform: rotate(90deg);}
+  to {transform: rotate(0deg);}
+}
+@-moz-keyframes rotate {
+  from {transform: rotate(90deg);}
+  to {transform: rotate(0deg);}
+}
+@-webkit-keyframes rotate {
+  from {transform: rotate(90deg);}
+  to {transform: rotate(0deg);}
 }
