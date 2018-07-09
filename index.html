@@ -13,18 +13,26 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
     crossorigin="anonymous">
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-
 </head>
 
 <body>
+  <div id="slider">
+    <div class="image">
+      <p class="wel-msg">Welcome to Underground</p>
+    </div>
+    <!-- <div class="image"></div>
+    <div class="image"></div>
+    <div class="image"></div>
+    <div class="paint">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div> -->
+  </div>
+
+  </div>
   <header class="header header-color z-depth-1">
-    <img src="img/profile-icon.jpg" alt="profile" class="circle responsive-img">
+    <img src="img/profile-icon2.jpg" alt="profile" class="circle responsive-img">
     <h1>Daisuke Murakami</h1>
     <p class="header-msg">Serverside Engineer</p>
     <p class="top-msg"></p>
@@ -54,22 +62,21 @@
         </div>
       </div>
     </div>
+
+    <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal">Modal</a> -->
+    <button data-target="modal1" class="btn modal-trigger">Modal</button>
+
+    <div id="modal1" class="modal" data-target="modal1">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>my name is daiskee.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK!</a>
+      </div>
+    </div>
+
   </header>
-  <div class="motion-type-1">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <div class="motion-type-2">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <div class="motion-type-3">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
   <div class="container">
     <div class="section">
       <div class="row">
@@ -173,11 +180,8 @@
           <i class="material-icons">favorite</i>Works
         </h3>
         <div class="carousel carousel-slider center z-depth-1">
-          <div class="carousel-fixed-item center">
-            <a class="btn-works btn waves-effect white grey-text darken-text-2 hoverable z-depth-4">Check!!</a>
-          </div>
-          <div class="carousel-item red white-text test" href="#one!">
-          </div>
+          <a class="carousel-item red white-text test" href="#one!">
+          </a>
           <div class="carousel-item amber white-text" href="#two!">
             <h2>Coming soon...</h2>
             <p class="white-text"></p>
@@ -186,6 +190,7 @@
       </div>
     </div>
   </div>
+
   <div class="container">
     <div class="section">
       <div class="row">
@@ -219,12 +224,17 @@
   <footer class="page-footer">
     &copy; 2018 Duuun
   </footer>
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- materialize js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <!-- Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!-- slider -->
+  <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+  <!-- import js -->
+  <script type="text/javascript" src="js/main.js"></script>
   <script>
-    /* materialize */
-    $(document).ready(function () {
-      $('.sidenav').sidenav();
-    });
-
     $('.carousel.carousel-slider').carousel({
       fullWidth: true,
       indicators: true

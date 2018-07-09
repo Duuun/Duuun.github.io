@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  $('.modal').modal();
+});
+
 window.onload = function () {
   var array = [
     "I would like to be in bedding forever if I can :D",
@@ -29,3 +33,9 @@ $(function () {
     return false;
   });
 });
+
+// $(function () {
+//   setTimeout(function () {
+//     $('.image').addClass('hide');
+//   }, 2000);
+// });
