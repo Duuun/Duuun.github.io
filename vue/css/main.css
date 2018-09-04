@@ -24,6 +24,10 @@ li.done {
 .hide {
     display: none;
 }
+.done .toggle {
+  background: #1678c2 !important;
+  color: #fff !important;
+}
 
 /**********************************************
 * animation

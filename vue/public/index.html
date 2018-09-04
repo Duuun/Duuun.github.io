@@ -20,12 +20,12 @@
 <body>
   <div id="app">
     <div class="ui breadcrumb">
-      <a class="section">Home</a>
+      <a class="section" href="../../">Home</a>
       <i class="right angle icon divider"></i>
       <div class="active section">TodoList</div>
     </div>
 
-    <h1 class="ui header">
+    <h1 class="ui header" style="margin-bottom:40px;">
       <i class="list alternate outline icon"></i>
       <div class="content">
         TodoList
@@ -46,38 +46,36 @@
       </div>
     </div>
 
-    <table>
+    <table class="ui orange table">
       <!-- ヘッダー -->
       <thead v-pre>
         <tr>
           <th class="id">ID</th>
           <th class="comment">コメント</th>
           <th class="state">状態</th>
-          <th class="button">-</th>
+          <th class="button">削除</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="item in computedTodos" v-bind:key="item.id" v-bind:class="{done:item.state}">
-          <th>{{ item.id }}</th>
+          <td>{{ item.id }}</td>
           <td>{{ item.comment }}</td>
           <td class="state">
-            <button v-on:click="doChangeState(item)">
+            <button v-on:click="doChangeState(item)" class="ui toggle button">
               {{ labels[item.state] }}
             </button>
           </td>
           <td class="btn">
-            <button v-on:click="doRemove(item)">
-              削除
-            </button>
+            <button v-on:click="doRemove(item)" class="negative ui button">削除</button>
           </td>
         </tr>
       </tbody>
     </table>
 
-    <form v-on:submit.prevent="doAdd" style="margin-top: 50px;">
+    <form v-on:submit.prevent="doAdd" style="margin-top: 32px;">
       <div class="ui action input">
         <input type="text" ref="comment" placeholder="New Todo...">
-        <button type="submit" class="ui button">追加</button>
+        <button type="submit" class="positive ui button">追加</button>
       </div>
     </form>
 

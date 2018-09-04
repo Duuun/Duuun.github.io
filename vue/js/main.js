@@ -69,7 +69,7 @@ const app = new Vue({
 
         // 状態変更
         doChangeState: function (item) {
-            item.state = item.state ? 1 : 0
+            item.state = !item.state ? 1 : 0
         },
 
         // 削除処理
