@@ -33,9 +33,3 @@ $(function () {
     return false;
   });
 });
-
-// $(function () {
-//   setTimeout(function () {
-//     $('.image').addClass('hide');
-//   }, 2000);
-// });

@@ -18,53 +18,12 @@
 </head>
 
 <body>
-  <div class="motion">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
   <div id="app">
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <a href="../../">TOP</a>
-          <div class="input-field col s12">
-            <i class="material-icons prefix" @click="addItem" style="cursor:pointer;">add_circle</i>
-            <input id="icon_prefix" type="text" class="validate" v-model="newItem">
-            <label for="icon_prefix">NEW TODO</label>
-          </div>
-        </div>
-      </form>
-      <ul v-if="todos.length" class="collection with-header">
-        <li class="collection-header">
-          <h5>やることリスト
-            <span class="new badge pink lighten-1">{{ remaining }}</span>
-          </h5>
-        </li>
-        <li v-for="(todo, index) in todos" class="collection-item">
-          <div>
-            <label>
-              <input type="checkbox" v-model="todo.isDone" />
-              <span :class="{done: todo.isDone}">{{ todo.title }}</span>
-            </label>
-            <a href="#!" class="secondary-content" @click="deleteItem(index)">
-              <i class="material-icons">cancel</i>
-            </a>
-          </div>
-        </li>
-      </ul>
-      <ul v-else class="collection with-header">
-        <li class="collection-header">
-          <h5>やることリスト</h5>
-        </li>
-        <li class="collection-item">
-          <span style="font-size:.9rem;">タスクはまだありません。</span>
-        </li>
-      </ul>
-    </div>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="../js/main.js "></script>
+
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="../js/main.js "></script>
 </body>
 
 </html>
