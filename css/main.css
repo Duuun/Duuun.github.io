@@ -356,6 +356,11 @@ span.batch {
   background-position: center center;
   background-size: cover;
 }
+.test2 {
+  background-image: url(../img/todo-img.png);
+  background-position: center center;
+  background-size: cover;
+}
 
 /**********************************************
 * footer
