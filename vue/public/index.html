@@ -19,7 +19,19 @@
 
 <body>
   <div id="app">
-    <h3>Todoリスト</h3>
+    <div class="ui breadcrumb">
+      <a class="section">Home</a>
+      <i class="right angle icon divider"></i>
+      <div class="active section">TodoList</div>
+    </div>
+
+    <h1 class="ui header">
+      <i class="list alternate outline icon"></i>
+      <div class="content">
+        TodoList
+        <div class="sub header">referrd　基礎から学ぶVue.js</div>
+      </div>
+    </h1>
 
     <!-- ソートラベル -->
     <div class="ui form">
@@ -30,10 +42,9 @@
             <label>{{ label.label }}</label>
           </div>
         </div>
+        <label>({{ computedTodos.length }} 件を表示)</label>
       </div>
     </div>
-
-    ({{ computedTodos.length }} 件を表示)
 
     <table>
       <!-- ヘッダー -->
