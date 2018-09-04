@@ -9,16 +9,66 @@
   <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
   <link rel="shortcut icon" href="favicon.png">
 
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <!-- semantic ui -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
+
   <!-- Material icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
   <div id="app">
+    <h3>Todoリスト</h3>
+
+    <!-- ソートラベル -->
+    <div class="ui form">
+      <div class="inline fields">
+        <div class="field" v-for="label in options">
+          <div class="ui radio checkbox">
+            <input type="radio" v-model="current" v-bind:value="label.value" name="frequency">
+            <label>{{ label.label }}</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    ({{ computedTodos.length }} 件を表示)
+
+    <table>
+      <!-- ヘッダー -->
+      <thead v-pre>
+        <tr>
+          <th class="id">ID</th>
+          <th class="comment">コメント</th>
+          <th class="state">状態</th>
+          <th class="button">-</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="item in computedTodos" v-bind:key="item.id" v-bind:class="{done:item.state}">
+          <th>{{ item.id }}</th>
+          <td>{{ item.comment }}</td>
+          <td class="state">
+            <button v-on:click="doChangeState(item)">
+              {{ labels[item.state] }}
+            </button>
+          </td>
+          <td class="btn">
+            <button v-on:click="doRemove(item)">
+              削除
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form v-on:submit.prevent="doAdd" style="margin-top: 50px;">
+      <div class="ui action input">
+        <input type="text" ref="comment" placeholder="New Todo...">
+        <button type="submit" class="ui button">追加</button>
+      </div>
+    </form>
 
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
