@@ -52,8 +52,14 @@ img {
 .header {
   width: 100%;
   text-align: center;
-  padding: 2em;
+  padding: 3em;
   display: block;
+  background: linear-gradient(-135deg, #f18d1d 4px, transparent 0) 0 4px,
+      linear-gradient(135deg, #f18d1d 4px, #f5f5f5 0) 0 4px;
+  background-color: #f18d1d;
+  background-position: left bottom !important;
+  background-repeat: repeat-x !important;
+  background-size: 15px 10px;
 }
 .header img {
   max-height: 185px;
@@ -249,6 +255,14 @@ ul.menu li.menu-contact a {
 * profile
 **********************************************/
 
+div#profile {
+  background: linear-gradient(-135deg, #f5f5f5 4px, transparent 0) 0 4px,
+  linear-gradient(135deg, #f5f5f5 4px, #69c4d0 0) 0 4px;
+  background-color: #f5f5f5;
+  background-position: left bottom !important;
+  background-repeat: repeat-x !important;
+  background-size: 15px 10px;
+}
 .profile {
   width: 100%;
   background-color: #fbfaef;
@@ -343,7 +357,19 @@ span.batch {
 /**********************************************
 * works
 **********************************************/
-
+div#works {
+  color: #fff;
+  background: linear-gradient(-135deg, #69c4d0 4px, transparent 0) 0 4px,
+  linear-gradient(135deg, #69c4d0 4px, #f5f5f5 0) 0 4px;
+  background-color: #69c4d0;
+  background-position: left bottom !important;
+  background-repeat: repeat-x !important;
+  background-size: 15px 10px;
+  padding-bottom: 2em;
+}
+h3#works {
+  color: #fff;
+}
 .swiper-container {
   width: 600px;
   height: 300px;
