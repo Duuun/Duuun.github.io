@@ -57,12 +57,7 @@ img {
   text-align: center;
   padding: 3em;
   display: block;
-  background: linear-gradient(-135deg, #f18d1d 4px, transparent 0) 0 4px,
-      linear-gradient(135deg, #f18d1d 4px, #f5f5f5 0) 0 4px;
-  background-color: #f18d1d;
-  background-position: left bottom !important;
-  background-repeat: repeat-x !important;
-  background-size: 15px 10px;
+  background-color: #69c4d0;
 }
 .header img {
   max-height: 185px;
@@ -87,7 +82,7 @@ img {
   display: inline-block;
   font-style: italic;
   padding: 6px 10px;
-  background: #00b5de;
+  background: orange;
   color: rgba(0, 0, 0, 0.7);
   border-radius: 4px;
   line-height: 1;
@@ -231,9 +226,6 @@ ul.menu li.menu-contact a {
 .carousel-item h2 {
   color: white;
 }
-.header-color {
-  background-color: #f18d1d;
-}
 .menu li a {
   color: #404a72 !important;
 }
@@ -258,12 +250,7 @@ ul.menu li.menu-contact a {
 **********************************************/
 
 div#profile {
-  background: linear-gradient(-135deg, #f5f5f5 4px, transparent 0) 0 4px,
-  linear-gradient(135deg, #f5f5f5 4px, #69c4d0 0) 0 4px;
   background-color: #f5f5f5;
-  background-position: left bottom !important;
-  background-repeat: repeat-x !important;
-  background-size: 15px 10px;
 }
 .profile {
   width: 100%;
@@ -361,12 +348,7 @@ span.batch {
 **********************************************/
 div#works {
   color: #fff;
-  background: linear-gradient(-135deg, #69c4d0 4px, transparent 0) 0 4px,
-  linear-gradient(135deg, #69c4d0 4px, #f5f5f5 0) 0 4px;
   background-color: #69c4d0;
-  background-position: left bottom !important;
-  background-repeat: repeat-x !important;
-  background-size: 15px 10px;
   padding-bottom: 2em;
 }
 h3#works {
