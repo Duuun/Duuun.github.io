@@ -45,7 +45,9 @@ p {
 img {
   border: 0;
 }
-
+.row h3 {
+  text-align: left;
+}
 /**********************************************
 * header
 **********************************************/
@@ -408,7 +410,7 @@ h3#works {
 * slide animation
 **********************************************/
 
-.loading {
+/* .loading {
   position: fixed;
   top: 0;
   left: 0;
@@ -430,12 +432,13 @@ h3#works {
   left: 50%;
   margin-top: -200px;
   margin-left: -245px;
-}
+} */
 
 /**********************************************
 * animation
 **********************************************/
 
+/* 
 .loading:nth-child(1) {
   animation: show-image .7s ease-in .5s forwards;
 }
@@ -447,4 +450,4 @@ h3#works {
   100% { 
     transform: translateX(100%);
   }
-}
+} */
