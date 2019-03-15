@@ -2,4 +2,4 @@
 
 ![image](https://i.imgur.com/K8sPnPZ.png)
 
-私の生きた記憶。
+私が生きた記憶。
